@@ -1,5 +1,6 @@
 import Vue from 'vue'
 
+// 重置css样式 统一各大浏览器的样式
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'
@@ -23,6 +24,9 @@ import '@/permission' // permission control
  * Currently MockJs will be used in the production environment,
  * please remove it before going online ! ! !
  */
+
+// 生产环境下使用mock
+// console.log(process.env)
 if (process.env.NODE_ENV === 'production') {
   const { mockXHR } = require('../mock')
   mockXHR()
