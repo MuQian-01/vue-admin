@@ -17,3 +17,11 @@ const requireAll = (requireContext) => {
 requireAll(req)
 
 // [].map((item, index)=> {})
+
+
+  // 引入所有的svg图标 => 组件
+  // const req = require.context('./svg', false, /\.svg$/)
+  // const requireAll = (requireContext) => {
+  //   return requireContext.keys().map(requireContext)
+  // }
+  // requireAll(req)
